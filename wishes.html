@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WordYe 生日快乐！</title>
+	<style type="text/css">
+		h1,body,html{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: Arial,"Microsoft YaHei","Hiragino Sans GB",sans-serif;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		h1{
+			font-size: 5em;
+			font-weight: normal;
+			color: #0cc;
+		}
+		p{
+			font-size: 2em;
+			margin:0.5em 0 2em 0;
+		}
+		button {
+			font-size: 15px;
+			color:white;
+			padding:  5px 15px;
+			-webkit-border-radius: 4px;/*只支持webkit内核的浏览器*/
+			border-radius: 4px; /*只支持IE内核的浏览器（IE>=7)*/
+			-moz-border-radius : 4px; /*只支持Mozilla内核的浏览器*/
+			background-color :pink; 
+
+		}
+		.person{
+			font-size: 0.5em;
+			color: black;
+		}
+		.q1{
+			font-size:1.2em;
+			margin:0em 0em;
+			color:orange;
+		}
+		.pic{
+			border:0.6em orange solid;
+			-webkit-border-radius: 8px;/*只支持webkit内核的浏览器*/
+			border-radius: 8px; /*只支持IE内核的浏览器（IE>=7)*/
+			-moz-border-radius : 8px; /*只支持Mozilla内核的浏览器*/
+		}
+		#container,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		#section0{
+			background-image: url(images/1.jpg);
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+		}
+		#section1{
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			/*background-image: url(images/2.jpg);*/
+			background-color: #0cc;
+		}
+		#section2{
+			background-image: url(images/3.jpg);
+			color: #fff;
+			text-shadow:1px 1px 1px #666;
+		}
+		#section3{
+			color: #008283;
+			background-image: url(images/4.jpg);
+			text-shadow:1px 1px 1px #fff;
+		}
+		#section0 p{
+			color: #F1FF00;
+		}
+		#section3 p{
+			color: #00A3AF;
+		}
+		.left{
+			float: left;
+		}
+		.intro{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+		}
+		#pages{
+			position:fixed;
+			right: 10px;
+			top: 50%;
+			list-style: none;
+		}
+		#pages li{
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #fff;
+			margin: 0 0 10px 5px;
+		}
+		#pages li.active{
+			width: 14px;
+			height: 14px;
+			border: 2px solid #FFFE00;
+			background: none;
+			margin-left: 0;
+		}
+		#section0 .title{
+			-webkit-transform: translateX(-100%);
+			transform: translateX(-100%);
+			-webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
+			animation: sectitle0 1s ease-in-out 100ms forwards;
+		}
+		#section0 p{
+			-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+			-webkit-animation: sec0 1s ease-in-out 100ms forwards;
+			animation: sec0 1s ease-in-out 100ms forwards;
+		}
+		@-webkit-keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sectitle0{
+			0%{
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@-webkit-keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+		@keyframes sec0{
+			0%{
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+			100%{
+				-webkit-transform: translateX(0);
+				transform: translateX(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="section active" id="section0">
+			<div class="intro">
+				<h1 class="title">宝宝，今天是你的生日</h1>
+				<p class="q1">想和你一起过生日吹蜡烛，想陪你度过每一个生日~</p>
+				<p class="q1">可是现在的我没有办法陪在你身边</p>
+				<p class="q1">只能用这样的方式陪你度过</p>
+				<p class="q1">不论怎样，我都会陪伴在宝宝身边，陪伴是最长情的告白！</p>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<img src="images/2.gif" alt="">
+				<p class="q1">爷，我以后不会惹你不开心咯，我保证！</p>
+				<p class="q1">我会好好的表现，好好的陪伴你身边！</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/3.gif" alt="">
+				<p class="q1">你不顺心的时候，我唱歌跳舞给你~</p>
+				<p class="q1">~misic~</p>
+				<p class="q1">...跟着我左手右手一个慢动作...</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/10.gif" alt="">
+				<p class="q1">但我真的很花痴~</p>
+				<p class="q1">每天想你的时候可能会发牢骚，但我克制~</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/11.gif" alt="">
+				<p class="q1">现在的我还给不了爷最好的生活，我也很难受~</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/7.gif" alt="">
+				<p class="q1">但我会努力的~~~</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/13.gif" alt="">
+				<p class="q1">我会努力努力在努力~</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/12.gif" alt="">
+				<p class="q1">我会加油加油再加油~~</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/9.gif" alt="">
+				<p class="q1">赚好多好多钱~~然后和宝宝一起环游世界</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/21.gif" alt="">
+				<p class="q1">世界在变，但你永远是我世界的中心</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		
+		<div class="section" id="section1">
+			<div class="intro">
+				<!-- <h1 class="title">我偷偷告诉你们</h1> -->
+				<img src="images/19.gif" alt="">
+				<p class="q1">总之</p>
+				<p class="q1">我会陪在宝宝身边，一起看书、旅行，一起度过我们未来的某一天！</p>
+				
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		<a href="name">
+		<div class="section" id="section1">
+			<div class="intro">
+				<img src="images/5.gif" alt="">
+				<p class="q1"><button><a href="cate.html">许愿就点我</a></button></p>
+				<p class="q1">Maker: 韩泽峰</p>
+				<p class="q1">WeChat:HanYi_0818</p>
+				<p class="q1">@韩翊影视后期工作室</p>
+				<!-- <img src="images/example.png"/> -->
+			</div>
+		</div>
+		</a>
+	</div>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="pageswitch.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#container").switchPage({
+				'loop' : true,
+				'keyboard' : true,
+				'direction' : 'horizontal'
+			});
+		});
+	</script>
+</body>
+</html>
