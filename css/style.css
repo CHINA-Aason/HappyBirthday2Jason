@@ -79,10 +79,8 @@ body,
 
 .ui {
   position: absolute;
-  left: 50%;
+  right: 0px;
   bottom: 5%;
-  width: 500px;
-  margin-left: -140px;
 }
 
 .ui-input {
