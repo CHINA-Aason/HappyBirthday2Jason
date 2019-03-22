@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('2017|APRIL|29TH|#time|祝|宝宝爷|张寅|生日快乐||#countdown 3||');
+      S.UI.simulate('Loading|#countdown 3|2019|03-23|祝|宝宝爷|Jason|Nicos|生日快乐||');
     }
 
     S.Drawing.loop(function () {
