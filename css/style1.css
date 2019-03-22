@@ -15,7 +15,7 @@ body {
   margin: -10em auto 0 auto;
 }
 button {
-      font-size: 15px;
+      font-size: 35px;
       color:white;
       padding:  5px 15px;
       -webkit-border-radius: 4px;/*只支持webkit内核的浏览器*/
@@ -159,5 +159,5 @@ button {
   text-align: center;
 }
 .text h1 {
-  font-size: 1.4em;
+  font-size: 3em;
 }
