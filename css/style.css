@@ -29,7 +29,7 @@ a:hover {
 }
 
 button {
-      font-size: 12px;
+      font-size: 18px;
       margin-left : 100pt;
       padding:  3px 12px;
       -webkit-border-radius: 4px;/*只支持webkit内核的浏览器*/
